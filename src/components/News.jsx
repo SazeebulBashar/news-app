@@ -1,0 +1,175 @@
+import { Component } from 'react'
+import NewsItems from './NewsItems'
+
+export class News extends Component {
+  
+    articles =
+        [
+            {
+              "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+              },
+              "author": "BBC News",
+              "title": "ICC: Netanyahu angrily rejects move to seek his arrest",
+              "description": "Israel's prime minister lambasts the ICC, saying it has compared Israel to \"mass murderers\".",
+              "url": "https://www.bbc.co.uk/news/articles/cmllykpwgdyo",
+              "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/23cc/live/f05527e0-16e1-11ef-a076-37e73e62d3fb.jpg",
+              "publishedAt": "2024-05-21T06:37:13.5602548Z",
+              "content": "The accusations against the Israeli and Hamas leaders stem from the events of 7 October, when waves of Hamas gunmen attacked Israel, killing about 1,200 people and taking 252 others back to Gaza as h… [+1720 chars]"
+            },
+            {
+              "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+              },
+              "author": "BBC News",
+              "title": "Scarlett Johansson left 'angered' by chatbot imitation",
+              "description": "The star says she is \"shocked\" after OpenAI launched a chatbot with a voice \"eerily similar\" to her own.",
+              "url": "https://www.bbc.co.uk/news/articles/cm559l5g529o",
+              "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/c956/live/c58e3cc0-1715-11ef-bb24-7b651bbe8f34.jpg",
+              "publishedAt": "2024-05-21T06:07:18.7647831Z",
+              "content": "However, Johansson accused the company, and its founder Sam Altman, of deliberately copying her voice, in a statement seen by the BBC on Monday evening. \r\nWhen I heard the released demo, I was shocke… [+2587 chars]"
+            },
+            {
+              "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+              },
+              "author": "BBC News",
+              "title": "Mount Fuji: Japan blocks iconic view to deter tourists",
+              "description": "A big barrier is erected as local residents accuse tourists of dropping litter and parking illegally.",
+              "url": "https://www.bbc.co.uk/news/articles/cgrrky897k0o",
+              "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/a54b/live/baf13bb0-1732-11ef-a5f9-c9e97f2e93cf.jpg",
+              "publishedAt": "2024-05-21T06:07:17.7025466Z",
+              "content": "It has been an eventful Tuesday in Fuji Kawaguchiko.\r\nJapanese officials had announced in late April that they would be putting up a screen but the hour of installation brought more attention to this… [+998 chars]"
+            },
+            {
+              "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+              },
+              "author": "BBC News",
+              "title": "Gaza detainees shackled, blindfolded and in nappies at Israel hospital",
+              "description": "Allegations centre on a military hospital where, a whistle-blower said, painkillers were \"routinely\" not used in procedures.",
+              "url": "https://www.bbc.co.uk/news/articles/crgygdr7vezo",
+              "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/77c8/live/5f286fc0-16d7-11ef-a5f9-c9e97f2e93cf.jpg",
+              "publishedAt": "2024-05-21T06:07:16.2722055Z",
+              "content": "\"This period was mental and physical torture, he said. I cant describe it. I was detained with two legs and now I have only one. Every now and then, I cry.\r\nThe IDF did not respond to the specific al… [+1295 chars]"
+            },
+            {
+              "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+              },
+              "author": "BBC News",
+              "title": "Reichsbürger group members go on trial over alleged coup",
+              "description": "The group believed that Queen Elizabeth II's death might have been a secret signal to act.",
+              "url": "https://www.bbc.co.uk/news/articles/c6pp5g7n866o",
+              "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/8fc9/live/9d615580-16dd-11ef-bf4c-d3aa639a5294.jpg",
+              "publishedAt": "2024-05-21T05:07:16.5919292Z",
+              "content": "Its an alleged coup plot featuring a German aristocrat, a massive arsenal of weapons and the belief that Queen Elizabeth IIs death might have been a secret signal to act.\r\nThe trials of people allege… [+3687 chars]"
+            },
+            {
+              "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+              },
+              "author": "BBC News",
+              "title": "New Caledonia: Australia and New Zealand send evacuation flights amid unrest",
+              "description": "The French Pacific territory's airport has been closed since deadly unrest erupted last week.",
+              "url": "https://www.bbc.co.uk/news/articles/crgg821ezz8o",
+              "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/c90a/live/591858c0-1713-11ef-b71c-3b126590418b.jpg",
+              "publishedAt": "2024-05-21T03:52:12.717114Z",
+              "content": "Four civilians - including at least three indigenous Kanak residents - have been killed in riots along with two police officers.\r\nDozens more have been injured and more than 200 people have so far be… [+2176 chars]"
+            },
+            {
+              "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+              },
+              "author": "BBC News",
+              "title": "Greek Shipwreck: Concerns over trial of accused",
+              "description": "More than 600 people died in the worst migrant shipwreck in a decade",
+              "url": "https://www.bbc.co.uk/news/articles/c255njzzx2lo",
+              "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/161f/live/1d128f00-16b2-11ef-9b12-1ba8f95c4917.jpg",
+              "publishedAt": "2024-05-21T02:22:16.9194314Z",
+              "content": "The indictment also says that the nine Egyptian men were part of a smuggling gang and charged each passenger between $4,000 and $8,000 (£3,100-£6,300) for a spot on the boat.\r\nThe prosecutions charge… [+1042 chars]"
+            },
+            {
+              "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+              },
+              "author": "BBC News",
+              "title": "What ICC arrest warrants mean for Israel, Benjamin Netanyahu and Hamas",
+              "description": "The Israeli and Hamas leaders are suspected of committing war crimes during the continuing war in Gaza.",
+              "url": "https://www.bbc.co.uk/news/articles/cw4490z75v3o",
+              "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/8a0e/live/a98f9ff0-16f7-11ef-8378-63398510ddfa.jpg",
+              "publishedAt": "2024-05-21T00:22:17.4704206Z",
+              "content": "An all-important exception for Mr Netanyahu and Mr Gallant is the US. The White House believes the ICC does not have jurisdiction in the conflict, a position that might widen the split inside Joe Bid… [+2404 chars]"
+            },
+            {
+              "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+              },
+              "author": "BBC News",
+              "title": "Trump trial: Judge reprimands Trump witness over groans",
+              "description": "On Monday, witness Robert Costello appeared frustrations on the stand, glaring at the judge.",
+              "url": "https://www.bbc.co.uk/news/world-us-canada-69041617",
+              "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/15628/production/_133329578_6e30bd80448a23fd4482e22a4b26cbece3d2d373-2.jpg",
+              "publishedAt": "2024-05-20T23:22:15.6889087Z",
+              "content": "\"Jeez,\" Mr Costello sighed into the microphone as Justice Juan Merchan repeatedly sustained objections from prosecutors, cutting off his responses. \r\n\"I'm sorry?\" the judge immediately responded in a… [+1235 chars]"
+            },
+            {
+              "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+              },
+              "author": "BBC News",
+              "title": "Trump trial: Cohen says he stole thousands from company",
+              "description": "The prosecution rested Monday and closing statements are expected to take place next week.",
+              "url": "https://www.bbc.co.uk/news/world-us-canada-69041401",
+              "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/CD70/production/_133329525_eb1ac88950b30f7cc61cb7b12dac4c4c812aa41e.jpg",
+              "publishedAt": "2024-05-20T22:22:13.6735172Z",
+              "content": "He then submitted a reimbursement request to the Trump Organization for the full $50,000 tab - $30,000 more than he had actually paid the tech company. \r\nRed Finch was hired to boost Mr Trump's ranki… [+3438 chars]"
+            }
+          ];
+    constructor(){
+      super();
+      this.state ={
+        articles: this.articles,
+        loading: false
+      }
+    }
+
+    async componentDidMount() {
+        console.log("cdm");
+        let url = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=ce46be9b01ec45cdbbcffaaa6d28867b";
+        let data = await fetch(url);
+        let parsedData = await data.json();
+        this.setState({articles : parsedData.articles})
+    }
+    
+    render() {
+    console.log("render")
+    return (
+      <div className='container'>
+      <div className="row">
+
+      <h1>News Monkey- Top Headlines</h1>
+      {this.state.articles.map((element)=>{
+        return <div key ={element.url} className="col-md-4 my-3">
+          <NewsItems title={element.title?element.title.slice(0,45):" "} description={element.description?element.description.slice(0,80):" "} imageUrl={element.urlToImage} newsUrl={element.url} />
+        </div>
+      })}
+        
+        
+      </div>
+      </div>
+    )
+  }
+}
+
+export default News
